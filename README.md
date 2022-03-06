@@ -1,24 +1,33 @@
-# README
+# <COSME BOX>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+<お気に入りコスメを紹介し共有できる、新たに購入するコスメのヒントを得られるサイト>
 
-Things you may want to cover:
+### サイトテーマ
+<お気に入りコスメのシェア>
 
-* Ruby version
+### テーマを選んだ理由
+<女性にとっての化粧とは、「オンとオフの切り替え」「好きな自分になる」「気持ちが明るくなる」など大きな意義があります。自分のお気に入りコスメを紹介することでコスメ好きの方の新たなコミュニケーションの場となったり、自分のご褒美に新しいコスメを買う時参考にしたいユーザーのお気に入りコスメからヒントを得ることができる、そのような頑張る人の息抜きの場所を提供できればと思い、このテーマを選定しました。>
 
-* System dependencies
+### ターゲットユーザ
+<お気に入りコスメを紹介したい人、購入するコスメを悩んでいている人>
 
-* Configuration
+### 主な利用シーン
+<自分のお気に入りコスメを誰かに共有したい時、他人のお気に入りコスメから新たに購入するコスメのヒントを得たい時>
 
-* Database creation
+## 設計書
+<...>
 
-* Database initialization
+## チャレンジ要素一覧
+<https://docs.google.com/spreadsheets/d/1OBCwN2fm_3pAqL-NOpq11SIErU9v3u1p5C4LXW-CMRY/edit?usp=sharing>
 
-* How to run the test suite
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- IDE：Cloud9
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 使用素材
+- 外部サービスの画像素材・音声素材を使用した場合は、必ずサービス名とURLを明記してください。
+- 使用しない場合は、使用素材の項目をREADMEから削除してください。
