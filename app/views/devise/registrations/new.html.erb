@@ -1,45 +1,45 @@
 <h2>Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= form_with model: @user, url: user_registration_path do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.label :nickname %><br />
+    <%= f.label :"ニックネーム" %><br />
     <%= f.text_field :nickname %>
   </div>
 
   <div class="field">
-    <%= f.label :birthday %><br />
+    <%= f.label :"生年月日" %><br />
     <%= f.text_field :birthday %>
   </div>
 
   <div class="field">
-    <%= f.label :sex %><br />
-    <%= f.text_field :sex %>
+    <%= f.label :"性別" %><br />
+    <%= f.select :sex, User.sexes.keys, {prompt: '選択してください'} %>
   </div>
 
   <div class="field">
-    <%= f.label :personal_color %><br />
-    <%= f.text_field :personal_color %>
+    <%= f.label :"パーソナルカラー" %><br />
+    <%= f.select :personal_color, User.personal_colors.keys, {prompt: '選択してください'} %>
   </div>
 
   <div class="field">
-    <%= f.label :skin_quality %><br />
-    <%= f.text_field :skin_quality %>
+    <%= f.label :"肌タイプ" %><br />
+    <%= f.select :skin_quality, User.skin_qualities.keys, {prompt: '選択してください'} %>
   </div>
 
   <div class="field">
-    <%= f.label :introduction %><br />
+    <%= f.label :"ひとこと" %><br />
     <%= f.text_field :introduction %>
   </div>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :"メールアドレス" %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
+    <%= f.label :"パスワード" %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
